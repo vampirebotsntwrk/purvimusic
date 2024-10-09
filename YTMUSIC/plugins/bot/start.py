@@ -112,30 +112,41 @@ async def start_pm(client, message: Message, _):
                     text=f"{message.from_user.mention} started the bot to check <b>Track Information</b>.\n\n<b>User ID:</b> <code>{message.from_user.id}</code>\n<b>Username:</b> @{message.from_user.username}",
                 )
     else:
-        out = private_panel(_)
-        baby = await message.reply_text(f"**🄻 10%**")
-        await baby.edit_text(f"**🄻🄾 30%**")
-        await baby.edit_text(f"**🄻🄾🄰 30%**")
-        await baby.edit_text(f"**🄻🄾🄰🄳 30%**")
-        await baby.edit_text(f"**🄻🄾🄰🄳🄸 50%**")
-        await baby.edit_text(f"**🄻🄾🄰🄳🄸🄽 30%**")
-        await baby.edit_text(f"**🄻🄾🄰🄳🄸🄽🄶 70%**")
-        await baby.edit_text(f"**🄻🄾🄰🄳🄸🄽🄶 🄱 30%**")
-        await baby.edit_text(f"**🄻🄾🄰🄳🄸🄽🄶 🄱🄰 90%**")
-        await baby.edit_text(f"**🄻🄾🄰🄳🄸🄽🄶 🄱🄰🄱 90%**")
-        await baby.edit_text(f"**🄻🄾🄰🄳🄸🄽🄶 🄱🄰🄱🅈 100%**")
-        await baby.edit_text(f"**ɴᴏᴡ sᴛᴀʀᴛᴇᴅ..**")
-        await baby.delete()
-        
-        await message.reply_photo(photo=config.START_IMG_URL,
-        caption=_["start_2"].format(message.from_user.mention, app.mention),
-        reply_markup=InlineKeyboardMarkup(out),
+out = private_panel(_)
+    baby = await message.reply_text(f"**🄻 10%**")
+    await asyncio.sleep(0.5)  # Delay in seconds
+    await baby.edit_text(f"**🄻🄾 30%**")
+    await asyncio.sleep(0.5)
+    await baby.edit_text(f"**🄻🄾🄰 30%**")
+    await asyncio.sleep(0.5)
+    await baby.edit_text(f"**🄻🄾🄰🄳 30%**")
+    await asyncio.sleep(0.5)
+    await baby.edit_text(f"**🄻🄾🄰🄳🄸 50%**")
+    await asyncio.sleep(0.5)
+    await baby.edit_text(f"**🄻🄾🄰🄳🄸🄽 30%**")
+    await asyncio.sleep(0.5)
+    await baby.edit_text(f"**🄻🄾🄰🄳🄸🄽🄶 70%**")
+    await asyncio.sleep(0.5)
+    await baby.edit_text(f"**🄻🄾🄰🄳🄸🄽🄶 🄱 30%**")
+    await asyncio.sleep(0.5)
+    await baby.edit_text(f"**🄻🄾🄰🄳🄸🄽🄶 🄱🄰 90%**")
+    await asyncio.sleep(0.5)
+    await baby.edit_text(f"**🄻🄾🄰🄳🄸🄽🄶 🄱🄰🄱 90%**")
+    await asyncio.sleep(0.5)
+    await baby.edit_text(f"**🄻🄾🄰🄳🄸🄽🄶 🄱🄰🄱🅈 100%**")
+    await asyncio.sleep(0.5)
+    await baby.edit_text(f"**ɴᴏᴡ sᴛᴀʀᴛᴇᴅ..**")
+    await baby.delete()
+    
+    await message.reply_photo(photo=config.START_IMG_URL,
+    caption=_["start_2"].format(message.from_user.mention, app.mention),
+    reply_markup=InlineKeyboardMarkup(out),
+    )
+    if await is_on_off(2):
+        return await app.send_message(
+            chat_id=config.LOGGER_ID,
+            text=f"{message.from_user.mention} started the bot.\n\n<b>User ID:</b> <code>{message.from_user.id}</code>\n<b>Username:</b> @{message.from_user.username}",
         )
-        if await is_on_off(2):
-            return await app.send_message(
-                chat_id=config.LOGGER_ID,
-                text=f"{message.from_user.mention} started the bot.\n\n<b>User ID:</b> <code>{message.from_user.id}</code>\n<b>Username:</b> @{message.from_user.username}",
-            )
 
 
 @app.on_message(filters.command(["start"]) & filters.group & ~BANNED_USERS)
