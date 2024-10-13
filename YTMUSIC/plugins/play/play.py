@@ -29,16 +29,16 @@ from config import BANNED_USERS, lyrical
 @app.on_message(
     filters.command(
         [
-            "play",
-            "vplay",
-            "cplay",
-            "cvplay",
-            "playforce",
-            "vplayforce",
-            "cplayforce",
-            "cvplayforce",
+            "پخش",
+            "ویدیو",
+            "پکانال",
+            "تکانال",
+            "پسریع",
+            "وسریع",
+            "سکانال",
+            "وکانال",
         ],
-        prefixes=["/", "!", "."],
+        prefixes=["+"],
     )
     & filters.group
     & ~BANNED_USERS
