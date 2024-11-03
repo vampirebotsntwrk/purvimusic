@@ -58,7 +58,7 @@ def create_laptop_thumbnail(videoid, title, channel, views, duration, thumbnail_
     return thumbnail_output
 
 async def generate_thumbnail(videoid):
-    thumbnail_path = await fetch_thumbnail(videoid)
+    thumbnail_path = await get_thumb(videoid)
     if thumbnail_path:
         title = "Sample Title"  # Replace with actual title
         channel = "Sample Channel"  # Replace with actual channel name
