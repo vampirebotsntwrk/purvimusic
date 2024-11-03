@@ -2,12 +2,20 @@ import os
 import aiofiles
 import aiohttp
 from PIL import Image, ImageDraw, ImageFont, ImageFilter
+from youtubesearchpython import VideosSearch
 
 async def get_thumb(videoid):
     url = f"https://www.youtube.com/watch?v={videoid}"
-    # Your code for fetching the thumbnail...
-    # Omitted for brevity
-    return thumbnail_path  # Return the path of the downloaded thumbnail
+    results = VideosSearch(url, limit=1)
+    for result in (await results.next())["result"]:
+        thumbnail_url = result["thumbnails"][0]["url"].split("?")[0]
+        async with aiohttp.ClientSession() as session:
+            async with session.get(thumbnail_url) as resp:
+                if resp.status == 200:
+                    async with aiofiles.open(f"cache/thumb{videoid}.png", mode="wb") as f:
+                        await f.write(await resp.read())
+                    return f"cache/thumb{videoid}.png"
+    return None
 
 def create_thumbnail(videoid, title, channel, views, duration, thumbnail_path):
     # Create a blank background
@@ -40,8 +48,9 @@ def create_thumbnail(videoid, title, channel, views, duration, thumbnail_path):
     background.paste(blurred_background, (0, 0))
 
     # Add text details below the circles
-    draw.text((320 - 100, 500), title, fill=(0, 0, 0), font=ImageFont.truetype("path/to/font.ttf", 30))
-    draw.text((960 - 100, 500), f"{channel}  |  {views}  |  {duration}", fill=(0, 0, 0), font=ImageFont.truetype("path/to/font.ttf", 30))
+    font_path = "path/to/font.ttf"  # Replace with your actual font path
+    draw.text((320 - 100, 500), title, fill=(0, 0, 0), font=ImageFont.truetype(font_path, 30))
+    draw.text((960 - 100, 500), f"{channel}  |  {views}  |  {duration}", fill=(0, 0, 0), font=ImageFont.truetype(font_path, 30))
 
     # Save the final thumbnail
     thumbnail_output = f"cache/{videoid}_thumbnail.png"
