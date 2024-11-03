@@ -5,7 +5,7 @@ from PIL import Image, ImageDraw, ImageEnhance, ImageFont, ImageFilter
 from unidecode import unidecode
 from youtubesearchpython.__future__ import VideosSearch
 
-async def fetch_thumbnail(videoid):
+async def get_thumb(videoid):
     url = f"https://www.youtube.com/watch?v={videoid}"
     results = VideosSearch(url, limit=1)
     for result in (await results.next())["result"]:
