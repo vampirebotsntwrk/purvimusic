@@ -1,7 +1,7 @@
 import os
 import aiofiles
 import aiohttp
-from PIL import Image, ImageDraw, ImageEnhance, ImageFont, ImageFilter
+from PIL import Image, ImageDraw, ImageFont, ImageFilter
 from unidecode import unidecode
 from youtubesearchpython.__future__ import VideosSearch
 
@@ -18,7 +18,7 @@ async def get_thumb(videoid):
                     return f"cache/thumb{videoid}.png"
     return None
 
-def create_laptop_thumbnail(videoid, title, channel, views, duration, thumbnail_path):
+def create_laptop_thumbnail(videoid, title, channel, views, duration, thumbnail_path, timezone):
     # Create a blank background
     background = Image.new('RGB', (1280, 720), (255, 255, 255))
     draw = ImageDraw.Draw(background)
@@ -52,20 +52,28 @@ def create_laptop_thumbnail(videoid, title, channel, views, duration, thumbnail_
     draw.text((160, 640), f"{channel}  |  {views}", fill=(255, 255, 255), font=channel_font)
     draw.text((900, 640), duration, fill=(255, 255, 255), font=channel_font)
 
+    # Draw the timezone text
+    draw.text((160, 680), f"Timezone: {timezone}", fill=(255, 255, 255), font=channel_font)
+
+    # Music thumbnail (example, replace with actual path)
+    music_thumb_path = "path/to/music_thumbnail.png"  # Placeholder path
+    music_thumb = Image.open(music_thumb_path).resize((100, 100))
+    background.paste(music_thumb, (1150, 600))
+
     # Save the final thumbnail
     thumbnail_output = f"cache/{videoid}_laptop_thumbnail.png"
     background.save(thumbnail_output)
     return thumbnail_output
 
-async def generate_thumbnail(videoid):
+async def generate_thumbnail(videoid, timezone):
     thumbnail_path = await get_thumb(videoid)
     if thumbnail_path:
         title = "Sample Title"  # Replace with actual title
         channel = "Sample Channel"  # Replace with actual channel name
         views = "1M views"  # Replace with actual views
         duration = "5:00"  # Replace with actual duration
-        return create_laptop_thumbnail(videoid, title, channel, views, duration, thumbnail_path)
+        return create_laptop_thumbnail(videoid, title, channel, views, duration, thumbnail_path, timezone)
     return None
 
 # Example usage:
-# asyncio.run(generate_thumbnail("YOUR_VIDEO_ID"))
+# asyncio.run(generate_thumbnail("YOUR_VIDEO_ID", "GMT+5:30"))
