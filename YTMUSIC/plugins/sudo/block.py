@@ -1,11 +1,11 @@
 from pyrogram import filters
 from pyrogram.types import Message
 
-from SONALI import app
-from SONALI.misc import SUDOERS
-from SONALI.utils.database import add_gban_user, remove_gban_user
-from SONALI.utils.decorators.language import language
-from SONALI.utils.extraction import extract_user
+from YTMUSIC import app
+from YTMUSIC.misc import SUDOERS
+from YTMUSIC.utils.database import add_gban_user, remove_gban_user
+from YTMUSIC.utils.decorators.language import language
+from YTMUSIC.utils.extraction import extract_user
 from config import BANNED_USERS
 
 
