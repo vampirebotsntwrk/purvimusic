@@ -25,7 +25,7 @@ IS_BROADCASTING = False
 async def braodcast_message(client, message, _):
     if message.from_user.id != OWNER_ID:
         return await message.reply_text(
-            "» ** • sɪʀғ ʏᴇʜ [ʙᴧʙʏ-ᴍᴜsɪᴄ™](https://t.me/BABY09_WORLD) ʙʀᴏᴀᴅᴄᴀsᴛ ᴋᴀʀ sᴀᴋᴛᴀ ʜᴀɪ •**\n❍ ᴊᴏɪɴ [ʙᴧʙʏ-ᴍᴜsɪᴄ™](https://t.me/BABY09_WORLD) ғᴏʀ ᴘʀᴏᴍᴏ •"
+            "» ** • sɪʀғ ʏᴇʜ [ɪɴᴄʀɪᴄɪʙʟᴇ-ᴍᴜsɪᴄ™](https://t.me/THE_INCRICIBLE) ʙʀᴏᴀᴅᴄᴀsᴛ ᴋᴀʀ sᴀᴋᴛᴀ ʜᴀɪ •**\n❍ ᴊᴏɪɴ [ɪɴᴄʀɪᴄɪʙʟᴇ-ᴍᴜsɪᴄ™](https://t.me/THE_INCRICIBLE) ғᴏʀ ᴘʀᴏᴍᴏ •"
         )
     global IS_BROADCASTING
     if message.reply_to_message:
