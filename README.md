@@ -4,7 +4,7 @@
 <img src="https://readme-typing-svg.herokuapp.com?color=FF0085&width=620&lines=ᴘᴏᴡᴇʀᴇᴅ+ʙʏ+ᴍɪᴄᴋᴇʏ+ᴇʀᴀ"></b></h3>
 <img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif">
 <h1 align="center"><b>❃ 𝐁ᴀʙʏ 𝐗 𝐓ᴜɴᴇ ❃ </b></h1>
-<p align="center"><a href="https://UTTAM470"><img src="https://telegra.ph/file/47fbfa19bce7817625ad9.jpg" width="400"></a></p>
+<p align="center"><a href="http"><img src="https://telegra.ph/file/47fbfa19bce7817625ad9.jpg" width="400"></a></p>
 <img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif">
 
 
