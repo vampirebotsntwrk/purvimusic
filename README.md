@@ -1,8 +1,4 @@
-# 𝗕𝗔𝗕𝗬 x 𝗧𝗨𝗡𝗘
-<h1 align="center"
- 
-### 🚩🚩 जय बजरंग बली 🚩🚩
-<h1 align="center"
+# sᴘᴏᴛɪғʏ x ᴍᴜsɪᴄ
   
 <img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif">
 <img src="https://readme-typing-svg.herokuapp.com?color=FF0085&width=620&lines=🍁+🚩+𝗣𝗢𝗪𝗘𝗥𝗘𝗗+𝗕𝗬+𝗨𝗧𝗧𝗔𝗠+𝗥𝗔𝗧𝗛𝗢𝗥𝗘+𝗞𝗜𝗡𝗚+𝗔𝗥𝗔+🚩+🍁"></b></h3>
