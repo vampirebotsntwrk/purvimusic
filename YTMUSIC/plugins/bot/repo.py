@@ -7,7 +7,7 @@ import httpx
 from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup
 
 start_txt = """**
-✪ ᴡᴇʟᴄᴏᴍᴇ ᴛᴏ ˹ ʙᴀʙʏ-ᴍᴜsɪᴄ™ ˼ ʙᴏᴛ ✪
+✪ ᴡᴇʟᴄᴏᴍᴇ ᴛᴏ ˹ ɪɴᴄʀɪᴄɪʙʟᴇ-ᴍᴜsɪᴄ™ ˼ ʙᴏᴛ ✪
  
  ❍ • ʙsᴅᴋ ʀᴇᴘᴏ ʟᴇɢᴀ ◉‿◉ •
  
@@ -31,37 +31,37 @@ async def start(_, msg):
           InlineKeyboardButton("•ᴀᴅᴅ ᴍᴇ•", url=f"https://t.me/{BOT_USERNAME}?startgroup=true")
         ],
         [
-          InlineKeyboardButton("•sᴜᴘᴘᴏʀᴛ•", url="https://t.me/+j6FO8pK8IIkxZDU1"),
-          InlineKeyboardButton("•ᴏᴡɴᴇʀ•", url="https://t.me/UTTAM470"),
+          InlineKeyboardButton("•sᴜᴘᴘᴏʀᴛ•", url="https://t.me/THE_INCRICIBLE"),
+          InlineKeyboardButton("•ᴏᴡɴᴇʀ•", url="https://t.me/LEGEND_MICKEY"),
           ],
                [
-                InlineKeyboardButton("•ᴜᴘᴅᴀᴛᴇs•", url="https://t.me/BABY09_WORLD"),
+                InlineKeyboardButton("•ᴜᴘᴅᴀᴛᴇs•", url="https://t.me/ZOYU_SUPPORT"),
 
 ],
 [
-              InlineKeyboardButton("•ʙᴀɴᴀʟʟ•", url=f"https://t.me/SATYABANALL_ROBOT"),
-              InlineKeyboardButton("︎•ʏᴛ-ᴍᴜsɪᴄ•", url=f"https://t.me/YOUTUBE_RROBOT"),
+              InlineKeyboardButton("•ʀᴏsɪᴇ-ᴍᴜsɪᴄ•", url=f"https://t.me/rossymusic_bot"),
+              InlineKeyboardButton("︎•ʜᴇᴀʀᴛʙᴇᴀᴛ-ᴍᴜsɪᴄ•", url=f"https://t.me/HeartbeatxMusicBot"),
               ],
               [
-              InlineKeyboardButton("•sᴘᴏᴛɪғʏ ᴍᴜsɪᴄ•", url=f"https://t.me/SPOTIFY_M_ROBOT"),
-InlineKeyboardButton("•ᴄʜᴀᴛ ʙᴏᴛ•", url=f"https://t.me/RADHIKA_CHAT_RROBOT"),
+              InlineKeyboardButton("•sᴘᴏᴛɪғʏ ᴍᴜsɪᴄ•", url=f"https://t.me/SPOTIFY_X_MUSICROBOT"),
+InlineKeyboardButton("•ᴄʜᴀᴛ ʙᴏᴛ•", url=f"https://t.me/Zoyu_chatbot"),
 ],
 [
-InlineKeyboardButton("•sᴛʀɪɴɢ-ɢᴇɴ•", url=f"https://t.me/STRING_BABYGEN_BOT"),
-InlineKeyboardButton("•ᴍᴀɴᴀɢᴍᴇɴᴛ•", url=f"https://t.me/SATYA_HELP97_BOT"),
+InlineKeyboardButton("•ᴢᴏʏᴜ-ᴍᴜsɪᴄ•", url=f"https://t.me/ZOYUMUSICBOT"),
+InlineKeyboardButton("•sᴜᴄʜɪ-ᴍᴜsɪᴄ•", url=f"https://t.me/SUCHI_MUSIC_BOT"),
 ],
 [
-              InlineKeyboardButton("•sᴘᴀᴍ-ʙᴏᴛ•", url=f"https://t.me/SATYASPAMROBOT"),
-              InlineKeyboardButton("•ᴀᴘɴᴀ-ᴍᴜsɪᴄ•︎", url=f"https://t.me/MUSIC_OO_ROBOT"),
+              InlineKeyboardButton("•ᴀᴜᴛᴏʀᴇᴀᴄᴛɪᴏɴ-ʙᴏᴛ•", url=f"https://t.me/Reaction_probot"),
+              InlineKeyboardButton("•ᴛʜᴜɴᴅᴇʀ-ᴍᴜsɪᴄ•︎", url=f"https://t.me/ThunderMusicRobot"),
               ],
               [
-              InlineKeyboardButton("•sᴛʀɪɴɢ ʜᴀᴄᴋ•", url=f"https://t.me/BABYSTRINGROBOT"),
+              InlineKeyboardButton("•ɪɴғʟᴇx-ᴍᴜsɪᴄ•", url=f"https://t.me/InflexMusicRobot"),
         ]]
     
     reply_markup = InlineKeyboardMarkup(buttons)
     
     await msg.reply_photo(
-        photo="https://telegra.ph/file/62e2e9fc93cd51219264f.jpg",
+        photo="https://files.catbox.moe/7pwsm0.jpg",
         caption=start_txt,
         reply_markup=reply_markup
     )
