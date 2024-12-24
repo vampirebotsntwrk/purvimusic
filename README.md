@@ -5,31 +5,9 @@
 <img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif">
 <h1 align="center"><b>❃ 𝐁ᴀʙʏ 𝐗 𝐓ᴜɴᴇ ❃ </b></h1>
 <p align="center"><a href="http"><img src="https://files.catbox.moe/7pwsm0.jpg" width="400"></a></p>
-<img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif">
-
 
 <h3 align="center">
     ─「 ᴅᴇᴩʟᴏʏ ᴏɴ ʜᴇʀᴏᴋᴜ 」─
 </h3>
 
-<p align="center"><a href="https://dashboard.heroku.com/new?template=https://github.com/GARIB-CODERS/WARRIORUTTAM"> <img src="https://img.shields.io/badge/Deploy%20On%20Heroku-green?style=for-the-badge&logo=heroku" width="220" height="38.45"/></a></p>
-
-
-![Readme Card](https://github-readme-stats.vercel.app/api/pin/?username=BABY-MUSIC&repo=YTMUSIC&theme=flag-india)
-
-
-
-<h3 align="center">
-    ─「 sᴜᴩᴩᴏʀᴛ 」─
-</h3>
-
-<p align="center">
-<a href="https://t.me/chating_hub09"><img src="https://img.shields.io/badge/-Support%20Group-blue.svg?style=for-the-badge&logo=Telegram"></a>
-</p>
-
-<p align="center">
-<a href="(https://t.me/https://t.me/+Q25anL0Ckuk5NzM1"><img src="https://img.shields.io/badge/-Support%20Channel-blue.svg?style=for-the-badge&logo=Telegram"></a>
-</p>
-
-
-- <b> sᴩᴇᴄɪᴀʟ ᴛʜᴀɴᴋs ᴛᴏ [BABY-MUSIC™](https://github.com/BABY-MUSIC) ғᴏʀ [BABY-MUSIC™](https://github.com/BABY-MUSIC/BABYTUNE) </b>
+<p align="center"><a href="https://dashboard.heroku.com/new?template=https://github.com/legendtosif/Spotify"> <img src="https://img.shields.io/badge/Deploy%20On%20Heroku-green?style=for-the-badge&logo=heroku" width="220" height="38.45"/></a></p>
