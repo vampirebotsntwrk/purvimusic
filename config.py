@@ -26,7 +26,7 @@ LOGGER_ID = int(getenv("LOGGER_ID",))
 # Get this value from  on Telegram by /id
 OWNER_ID = int(getenv("OWNER_ID"))
 # --------------------------------------------------------
-BOT_USERNAME = getenv("BOT_USERNAME" , "SPOTIFY_X_MUSICROBOT")
+BOT_USERNAME = getenv("BOT_USERNAME" , "AAROHI_MUSICBOT")
 # --------------------------------------------------------
 BOT_NAME = getenv("BOT_NAME" , "𝐒ᴘᴏᴛɪғʏ ꭙ 𝐌ᴜsɪᴄ")
 # ________________________________________________________________________________#
@@ -38,15 +38,15 @@ HEROKU_API_KEY = getenv("HEROKU_API_KEY")
 # ________________________________________________________________________________#
 UPSTREAM_REPO = getenv(
     "UPSTREAM_REPO",
-    "https://github.com/legendtosif/Spotify",
+    "https://github.com/ISTKHAR-king/AAROHI",
 )
 UPSTREAM_BRANCH = getenv("UPSTREAM_BRANCH", "main")
 GIT_TOKEN = getenv(
     "GIT_TOKEN", None
 )  # Fill this variable if your upstream repository is private
 # ________________________________________________________________________________#
-SUPPORT_CHANNEL = getenv("SUPPORT_CHANNEL", "https://t.me/The_incricible")
-SUPPORT_CHAT = getenv("SUPPORT_CHAT", "https://t.me/The_incricible")
+SUPPORT_CHANNEL = getenv("SUPPORT_CHANNEL", "https://t.me/THUNDERDEVS")
+SUPPORT_CHAT = getenv("SUPPORT_CHAT", "https://t.me/+E8x1hf2jWBQ0ZDg1")
 # ________________________________________________________________________________#
 # Set this to True if you want the assistant to automatically leave chats
 # after an interval
@@ -100,12 +100,12 @@ confirmer = {}
 
 START_IMG_URL = getenv(
     "START_IMG_URL",
-    "https://files.catbox.moe/u50uo4.jpg",
+    "https://files.catbox.moe/zrjno8.jpg",
 )
 
 PING_IMG_URL = getenv(
     "PING_IMG_URL",
-    "https://files.catbox.moe/u50uo4.jpg",
+    "https://files.catbox.moe/zrjno8.jpg",
 )
 
 PLAYLIST_IMG_URL = getenv(
@@ -120,7 +120,7 @@ GLOBAL_IMG_URL = getenv(
 
 STATS_IMG_URL = getenv(
     "STATS_IMG_URL",
-    "https://telegra.ph/file/4dd9e2c231eaf7c290404.jpg",
+    "https://files.catbox.moe/zrjno8.jpg",
 )
 
 TELEGRAM_AUDIO_URL = getenv(
@@ -145,7 +145,7 @@ SOUNCLOUD_IMG_URL = getenv(
 
 YOUTUBE_IMG_URL = getenv(
     "YOUTUBE_IMG_URL",
-    "https://telegra.ph/file/76d29aa31c40a7f026d7e.jpg",
+    "https://files.catbox.moe/zrjno8.jpg",
 )
 
 SPOTIFY_ARTIST_IMG_URL = getenv(
