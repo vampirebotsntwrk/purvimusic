@@ -38,15 +38,15 @@ HEROKU_API_KEY = getenv("HEROKU_API_KEY")
 # ________________________________________________________________________________#
 UPSTREAM_REPO = getenv(
     "UPSTREAM_REPO",
-    "https://github.com/ISTKHAR-king/AAROHI",
+    "https://github.com/vampirebotsntwrk/purvimusic",
 )
 UPSTREAM_BRANCH = getenv("UPSTREAM_BRANCH", "main")
 GIT_TOKEN = getenv(
     "GIT_TOKEN", None
 )  # Fill this variable if your upstream repository is private
 # ________________________________________________________________________________#
-SUPPORT_CHANNEL = getenv("SUPPORT_CHANNEL", "https://t.me/THUNDERDEVS")
-SUPPORT_CHAT = getenv("SUPPORT_CHAT", "https://t.me/+E8x1hf2jWBQ0ZDg1")
+SUPPORT_CHANNEL = getenv("SUPPORT_CHANNEL", "https://t.me/lllVAMPIRE_UPDATElll")
+SUPPORT_CHAT = getenv("SUPPORT_CHAT", "https://t.me/+EheD7pA5ngc1N2Q1")
 # ________________________________________________________________________________#
 # Set this to True if you want the assistant to automatically leave chats
 # after an interval
@@ -100,12 +100,12 @@ confirmer = {}
 
 START_IMG_URL = getenv(
     "START_IMG_URL",
-    "https://files.catbox.moe/zrjno8.jpg",
+    "https://files.catbox.moe/6glxhs.mp4g",
 )
 
 PING_IMG_URL = getenv(
     "PING_IMG_URL",
-    "https://files.catbox.moe/zrjno8.jpg",
+    "https://files.catbox.moe/6glxhs.mp4",
 )
 
 PLAYLIST_IMG_URL = getenv(
@@ -120,7 +120,7 @@ GLOBAL_IMG_URL = getenv(
 
 STATS_IMG_URL = getenv(
     "STATS_IMG_URL",
-    "https://files.catbox.moe/zrjno8.jpg",
+    "https://files.catbox.moe/6glxhs.mp4",
 )
 
 TELEGRAM_AUDIO_URL = getenv(
